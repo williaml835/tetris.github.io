@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-column" aria-label="Tetris board">
+        <div class="board-shell">
+          <canvas id="board" aria-label="Tetris play field"></canvas>
+          <div class="board-overlay" id="overlay">
+            <p class="overlay-kicker" id="overlayKicker">Ready</p>
+            <h2 id="overlayTitle">Tetris</h2>
+            <button class="primary-action" id="overlayAction" type="button">
+              <span aria-hidden="true">▶</span>
+              <span>Start</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="touch-controls" aria-label="Touch controls">
+          <button type="button" data-action="left" title="Move left" aria-label="Move left">←</button>
+          <button type="button" data-action="rotate" title="Rotate" aria-label="Rotate">↻</button>
+          <button type="button" data-action="right" title="Move right" aria-label="Move right">→</button>
+          <button type="button" data-action="hold" title="Hold / swap with Shift" aria-label="Hold or swap piece with Shift">⇧</button>
+          <button type="button" data-action="down" title="Soft drop" aria-label="Soft drop">↓</button>
+          <button type="button" data-action="drop" title="Hard drop" aria-label="Hard drop">⤓</button>
+        </div>
+      </section>
+
+      <aside class="side-panel" aria-label="Game status">
+        <header class="title-row">
+          <h1>Tetris</h1>
+          <div class="button-row">
+            <button type="button" id="startButton" title="Start or restart">
+              <span aria-hidden="true">↺</span>
+              <span>Restart</span>
+            </button>
+            <button type="button" id="pauseButton" title="Pause or resume">
+              <span aria-hidden="true">Ⅱ</span>
+              <span>Pause</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="score-grid">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Level</span>
+            <strong id="level">1</strong>
+          </div>
+          <div>
+            <span>Lines</span>
+            <strong id="lines">0</strong>
+          </div>
+          <div>
+            <span>Best</span>
+            <strong id="best">0</strong>
+          </div>
+        </div>
+
+        <section class="preview-zone" aria-label="Held piece">
+          <h2>Hold</h2>
+          <canvas id="hold" aria-label="Held piece"></canvas>
+        </section>
+
+        <section class="preview-zone" aria-label="Upcoming pieces">
+          <h2>Next</h2>
+          <div class="next-stack">
+            <canvas class="next-piece" data-next="0" aria-label="Next piece 1"></canvas>
+            <canvas class="next-piece" data-next="1" aria-label="Next piece 2"></canvas>
+            <canvas class="next-piece" data-next="2" aria-label="Next piece 3"></canvas>
+            <canvas class="next-piece" data-next="3" aria-label="Next piece 4"></canvas>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
