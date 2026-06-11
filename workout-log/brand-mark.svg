@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Workout Log mark</title>
+  <defs>
+    <linearGradient id="bg" x1="12" y1="8" x2="84" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08100d"/>
+      <stop offset=".52" stop-color="#0c1b18"/>
+      <stop offset="1" stop-color="#11161b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="20" y1="28" x2="78" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37f28d"/>
+      <stop offset=".58" stop-color="#36c5ff"/>
+      <stop offset="1" stop-color="#ffbd5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="20" fill="url(#bg)"/>
+  <path d="M16 29h64M16 48h64M16 67h64" stroke="#d7ffe8" stroke-opacity=".08" stroke-width="2"/>
+  <path d="M21 50h10m5 0h24m5 0h10" stroke="#effff6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M28 35v30m40-30v30" stroke="url(#neon)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M39 31h18a9 9 0 0 1 9 9v20a9 9 0 0 1-9 9H39a9 9 0 0 1-9-9V40a9 9 0 0 1 9-9Z" fill="none" stroke="url(#neon)" stroke-width="5"/>
+  <path d="M33 25h30" stroke="#37f28d" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+</svg>
