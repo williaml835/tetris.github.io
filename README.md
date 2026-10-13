@@ -29,16 +29,3 @@ Open `http://localhost:8000`. No installation or build step is needed.
 | Restart | Restart button |
 
 Buttons below the board provide touch controls. The best score is stored in this browser's local storage.
-
-## Folder guide
-
-```text
-tetris.github.io/
-├── index.html                 # Website entry page
-├── assets/
-│   ├── js/game.js             # Game logic and controls
-│   └── css/styles.css         # Layout and appearance
-└── docs/maintenance.md        # Editing and publishing notes
-```
-
-The repository keeps its existing name so links remain stable. See [maintenance notes](docs/maintenance.md) for publishing and the course-notebook relocation.
