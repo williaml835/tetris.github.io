@@ -10,8 +10,3 @@ GitHub Pages still serves the root `index.html`; JavaScript and CSS live in `ass
 4. Commit only Tetris files and push to `main`.
 
 Keep the existing GitHub Pages publishing configuration. If configuring it from scratch, select `main` and `/ (root)` in the repository's Pages settings.
-
-## Course notebook relocation
-
-`lecture_notebooks/L01 Intro.ipynb` now lives at [cse20/notebooks/lectures/lecture-01-intro.ipynb](https://github.com/williaml835/cse20/blob/main/notebooks/lectures/lecture-01-intro.ipynb). It was copied without changing its contents before removal here. Previous commits still contain the original.
-
