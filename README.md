@@ -42,9 +42,3 @@ tetris.github.io/
 ```
 
 The repository keeps its existing name so links remain stable. See [maintenance notes](docs/maintenance.md) for publishing and the course-notebook relocation.
-
-## Related repositories
-
-- [Workout Log](https://github.com/williaml835/workout-log) — workout tracking website.
-- [CSE 20](https://github.com/williaml835/cse20) — Python lecture notebooks and study notes.
-
